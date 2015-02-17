@@ -1,0 +1,28 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2013
+VisualStudioVersion = 12.0.31101.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "MVDollHouse", "MVDollHouse\MVDollHouse.vcxproj", "{3D10DC24-C136-4421-AC70-2ECD17F9E6FE}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "RFDollHouse", "RFDollHouse\RFDollHouse.vcxproj", "{B51ECB51-0F86-4619-B82B-27E055D11EA5}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Win32 = Debug|Win32
+		Release|Win32 = Release|Win32
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{3D10DC24-C136-4421-AC70-2ECD17F9E6FE}.Debug|Win32.ActiveCfg = Debug|Win32
+		{3D10DC24-C136-4421-AC70-2ECD17F9E6FE}.Debug|Win32.Build.0 = Debug|Win32
+		{3D10DC24-C136-4421-AC70-2ECD17F9E6FE}.Release|Win32.ActiveCfg = Release|Win32
+		{3D10DC24-C136-4421-AC70-2ECD17F9E6FE}.Release|Win32.Build.0 = Release|Win32
+		{B51ECB51-0F86-4619-B82B-27E055D11EA5}.Debug|Win32.ActiveCfg = Debug|Win32
+		{B51ECB51-0F86-4619-B82B-27E055D11EA5}.Debug|Win32.Build.0 = Debug|Win32
+		{B51ECB51-0F86-4619-B82B-27E055D11EA5}.Release|Win32.ActiveCfg = Release|Win32
+		{B51ECB51-0F86-4619-B82B-27E055D11EA5}.Release|Win32.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
