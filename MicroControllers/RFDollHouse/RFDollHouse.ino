@@ -2,6 +2,7 @@
 #include <libRFduino.h>
 #include <Wire\Wire.h>
 #include "DollHouse.h"
+#include "Message.h"
 
 void setup()
 {
@@ -14,7 +15,8 @@ void setup()
 	RFduinoBLE.begin();
 	Wire.begin();
 	Wire.onReceive(busReceiveEvent);
-	int i = MVAddress;
+
+	pinMode(0, OUTPUT);
 }
 
 void loop()
@@ -25,10 +27,23 @@ void loop()
 	float temp = RFduino_temperature(CELSIUS);
 
 	RFduinoBLE.sendFloat(temp);
+
+	long l = long(temp * 100);
+
+	Wire.beginTransmission(MVAddress);
+	Wire.write(l);
+	Wire.endTransmission();
+
+	digitalWrite(0, HIGH);
+
+	RFduino_ULPDelay(SECONDS(1));
+
+	digitalWrite(0, LOW);
 }
 
 void busReceiveEvent(int count)
 {
+	Message m;
 	/*while (1 < Wire.available()) // loop through all but the last
 	{
 		char c = Wire.read(); // receive byte as a character

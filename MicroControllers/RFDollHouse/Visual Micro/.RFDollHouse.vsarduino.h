@@ -43,4 +43,6 @@
 #define portInputRegister(P)
 #define portModeRegister(P)
 #include <RFDollHouse.ino>
+#include <DollHouse.h>
+#include <Message.h>
 #endif

@@ -21,7 +21,13 @@
     <ClInclude Include="Visual Micro\.MVDollHouse.vsarduino.h">
       <Filter>Header Files</Filter>
     </ClInclude>
+    <ClInclude Include="Common\DollHouse.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
     <ClInclude Include="DollHouse.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Message.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>

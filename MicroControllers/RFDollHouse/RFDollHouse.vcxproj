@@ -47,7 +47,7 @@
       <Optimization>Disabled</Optimization>
       <SDLCheck>true</SDLCheck>
       <AdditionalIncludeDirectories>C:\arduino\hardware\arduino\RFduino\cores\arduino;C:\arduino\hardware\arduino\RFduino\variants\RFduino;C:\Source\github\DollHouse\MicroControllers\RFDollHouse;C:\arduino\hardware\arduino\RFduino\libraries\RFduinoBLE;C:\arduino\hardware\arduino\RFduino\libraries\RFduinoBLE\utility;C:\arduino\hardware\arduino\RFduino\libraries\Wire;C:\arduino\hardware\arduino\RFduino\libraries\Wire\utility;C:\arduino\libraries;C:\arduino\hardware\arduino\RFduino\libraries;C:\Program Files (x86)\Visual Micro\Visual Micro for Arduino\Micro Platforms\default\debuggers;C:\Source\github\bearded-avenger\libraries;C:\arduino\hardware\tools\gcc-arm-none-eabi-4.8.3-2014q1\gcc-arm-none-eabi-4.8.3-2014q1\include;C:\arduino\hardware\tools\gcc-arm-none-eabi-4.8.3-2014q1\gcc-arm-none-eabi-4.8.3-2014q1\include;C:\arduino\hardware\tools\gcc-arm-none-eabi-4.8.3-2014q1\lib\gcc\arm-none-eabi\4.8.3\include;C:\arduino\hardware\tools\gcc-arm-none-eabi-4.8.3-2014q1\lib\gcc\arm-none-eabi\4.8.3\include\;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
-      <ForcedIncludeFiles>C:\Source\github\bearded-avenger\RFDollHouse\Visual Micro\.RFDollHouse.vsarduino.h;%(ForcedIncludeFiles)</ForcedIncludeFiles>
+      <ForcedIncludeFiles>C:\Source\github\DollHouse\MicroControllers\RFDollHouse\Visual Micro\.RFDollHouse.vsarduino.h;%(ForcedIncludeFiles)</ForcedIncludeFiles>
       <IgnoreStandardIncludePath>true</IgnoreStandardIncludePath>
       <PreprocessorDefinitions>__RFduino__;ARDUINO=160;ARDUINO_MAIN;printf=iprintf;__RFDUINO__;F_CPU=16000000;__cplusplus;GCC_VERSION=40803;ARDUINO_ARCH_RFDUINO;ARDUINO_RFDUINO_RFDUINO;%(PreprocessorDefinitions)</PreprocessorDefinitions>
     </ClCompile>
@@ -76,6 +76,7 @@
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="DollHouse.h" />
+    <ClInclude Include="Message.h" />
     <ClInclude Include="Visual Micro\.RFDollHouse.vsarduino.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />

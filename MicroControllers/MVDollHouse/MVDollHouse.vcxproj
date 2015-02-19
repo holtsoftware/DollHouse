@@ -44,8 +44,8 @@
       <WarningLevel>Level3</WarningLevel>
       <Optimization>Disabled</Optimization>
       <SDLCheck>true</SDLCheck>
-      <AdditionalIncludeDirectories>C:\arduino\hardware\arduino\avr\cores\arduino;C:\arduino\hardware\arduino\avr\variants\standard;C:\Source\github\DollHouse\MicroControllers\MVDollHouse;C:\arduino\libraries;C:\arduino\hardware\arduino\avr\libraries;C:\Program Files (x86)\Visual Micro\Visual Micro for Arduino\Micro Platforms\default\debuggers;C:\Source\github\bearded-avenger\libraries;c:\arduino\hardware\tools\avr\avr\include\;c:\arduino\hardware\tools\avr\avr\include\avr\;c:\arduino\hardware\tools\avr\avr\;c:\arduino\hardware\tools\avr\lib\gcc\avr\4.8.1\include\;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
-      <ForcedIncludeFiles>C:\Source\github\bearded-avenger\MVDollHouse\Visual Micro\.MVDollHouse.vsarduino.h;%(ForcedIncludeFiles)</ForcedIncludeFiles>
+      <AdditionalIncludeDirectories>C:\arduino\hardware\arduino\avr\cores\arduino;C:\arduino\hardware\arduino\avr\variants\standard;C:\Source\github\DollHouse\MicroControllers\MVDollHouse;C:\arduino\hardware\arduino\avr\libraries\Wire;C:\arduino\hardware\arduino\avr\libraries\Wire\utility;C:\arduino\libraries\MicroView;C:\arduino\libraries\MicroView\utility;C:\arduino\libraries;C:\arduino\hardware\arduino\avr\libraries;C:\Program Files (x86)\Visual Micro\Visual Micro for Arduino\Micro Platforms\default\debuggers;C:\Source\github\bearded-avenger\libraries;c:\arduino\hardware\tools\avr\avr\include\;c:\arduino\hardware\tools\avr\avr\include\avr\;c:\arduino\hardware\tools\avr\avr\;c:\arduino\hardware\tools\avr\lib\gcc\avr\4.8.1\include\;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <ForcedIncludeFiles>C:\Source\github\DollHouse\MicroControllers\MVDollHouse\Visual Micro\.MVDollHouse.vsarduino.h;%(ForcedIncludeFiles)</ForcedIncludeFiles>
       <IgnoreStandardIncludePath>true</IgnoreStandardIncludePath>
       <PreprocessorDefinitions>__AVR_ATmega328p__;__AVR_ATmega328P__;ARDUINO=160;ARDUINO_MAIN;__AVR__;__avr__;F_CPU=16000000L;__cplusplus;GCC_VERSION=40801;ARDUINO_ARCH_AVR;ARDUINO_AVR_UNO;%(PreprocessorDefinitions)</PreprocessorDefinitions>
     </ClCompile>
@@ -73,7 +73,9 @@
     </None>
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="Common\DollHouse.h" />
     <ClInclude Include="DollHouse.h" />
+    <ClInclude Include="Message.h" />
     <ClInclude Include="Visual Micro\.MVDollHouse.vsarduino.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
